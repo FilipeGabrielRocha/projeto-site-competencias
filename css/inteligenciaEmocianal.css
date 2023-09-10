@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Josefin+Sans&family=Krona+One&display=swap');
+
+:root{
+    --navbarCor: #000000;
+    --colorTitutlo: #E46F44;
+    --corSubTitulo: #3E718C;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.bodyInteligenciaEmocional{
+    max-height: 100vh;
+    background-image: url("../images/backInteligencia.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bodyResolucaoConflitos{
+    max-height: 100vh;
+    background-image: url("../images/backgroundResolucaoConflitos.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bodyInteligenciaEmocional{
+    max-height: 100vh;
+    background-image: url("../images/backgroundTrabalhoEquipe.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.img{
+    width: auto;
+    height: 539px;
+}
+
+.titulo{
+    font-family: 'Krona One', sans-serif;
+    font-weight: bolder;
+    color: var(--colorTitutlo);
+}
+
+.content_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{ 
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
+    height: 100vh;
+    gap: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.writing{
+    text-align: justify;
+    margin-top: 50px;
+}
+
+.content{
+    position: relative;
+}
+
+.setaVoltar{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}

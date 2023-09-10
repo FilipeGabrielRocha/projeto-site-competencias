@@ -1,0 +1,180 @@
+/* Media Query página 2*/
+
+@media screen and (max-width:1500px) {
+
+    .writing {
+        width: 35vw;
+
+    }
+}
+
+@media screen and (max-width:1220px) {
+
+    .writing {
+        width: 40vw;
+        font-size: 1rem;
+
+    }
+
+    .content_image h1 {
+        font-family: 'Potta One', cursive;
+        color: #E46F44;
+        font-size: 2em;
+
+    }
+
+    .content_image .img {
+        width: 412px;
+        height: 391px;
+    }
+
+    .grid-container .sub_text {
+        font-size: 1.4em;
+    }
+
+    .grid-container .explanation_text {
+
+        font-size: 2em;
+
+    }
+
+    .grid-container .icon_text img {
+        width: 60px;
+        position: absolute;
+        margin-left: -10px;
+    }
+}
+
+@media screen and (max-width:800px) {
+
+    .content {
+        margin-top: 10%;
+    }
+
+    .content .container {
+        flex-direction: column;
+    }
+
+    .writing {
+        width: 60vw;
+        font-size: 1.2rem;
+
+    }
+
+    .content_image h1 {
+        font-family: 'Potta One', cursive;
+        color: #E46F44;
+        font-size: 2em;
+
+    }
+
+    .content_image .img {
+        width: 280px;
+        height: 240px;
+    }
+
+    .grid-container .sub_text {
+        font-size: 1.7em;
+    }
+
+    .grid-container .explanation_text {
+
+        font-size: 2.4em;
+
+    }
+
+    .grid-container .icon_text img {
+        width: 80px;
+        position: absolute;
+        margin-left: -10px;
+    }
+}
+
+@media screen and (max-width:540px) {
+
+    .content {
+        margin-top: 30%;
+    }
+
+    .content .container {
+        flex-direction: column;
+    }
+
+    .writing {
+        width: 80vw;
+        font-size: 0.9rem;
+
+    }
+
+    .content_image h1 {
+        font-family: 'Potta One', cursive;
+        color: #E46F44;
+        font-size: 2em;
+
+    }
+
+    .content_image .img {
+        width: 280px;
+        height: 240px;
+    }
+
+    .grid-container .sub_text {
+        font-size: 1.3em;
+    }
+
+    .grid-container .explanation_text {
+
+        font-size: 1.8em;
+
+    }
+
+    .grid-container .icon_text img {
+        width: 60px;
+        position: absolute;
+        margin-left: -10px;
+    }
+}
+
+/* @media Query página 3 */
+@media screen and (max-width:1660px) {
+
+    .posters_images .select_image {
+        width: 480px;
+        height: 630px;
+
+    }
+
+    .item_um .sobreposition {
+        width: 30vh;
+    }
+
+    .item_dois .sobreposition {
+        width: 30vh;
+    }
+
+    .item_tres .sobreposition {
+        width: 30vh;
+    }
+
+}
+
+@media screen and (max-width:1460px) {
+
+    .posters_images .select_image {
+        width: 400px;
+        height: 560px;
+
+    }
+
+    .item_um .sobreposition {
+        width: 22vh;
+    }
+
+    .item_dois .sobreposition {
+        width: 22vh;
+    }
+
+    .item_tres .sobreposition {
+        width: 22vh;
+    }
+}

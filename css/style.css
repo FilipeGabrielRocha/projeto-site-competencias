@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Josefin+Sans&family=Krona+One&display=swap');
+
+/* COLOCANDO AS CORES */
+:root{ 
+    --navbarCor: #000000;
+    --colorTitutlo: #E46F44;
+    --corSubTitulo: #3E718C;
+
+    /* FOOTER */
+    --marrom: #C55142;
+    --azul: #3E718C;
+    --azul2: #6A99B3;
+    --laranja: #E46F44;
+    --amarelo: #E6AD3C; 
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    list-style: none;
+    border: 0;
+    font-size: 100%;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+header{
+    height: 100vh;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-position: cover;
+    min-height: 100px;
+}
+
+/* ESTILIZAÇÃO SO SCROLL */
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #C55142 #ffffff;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 17px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #C55142;
+    border-radius: 7px;
+    border: 3px solid #ffffff;
+  }
+
+.centroContainer{
+    width: 92.5vw;
+    height: 92.5vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 64px;
+    background-color: rgba(255, 255, 255, .25);
+    backdrop-filter: blur(36px);
+}
+
+.navBarContainer img{
+    width: 40px;   
+    position: relative;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.navBarContainer nav{
+    display: flex;
+    float: right;
+    margin-top: 30px;
+    min-height: 400px;
+    padding-right: 50px;    
+    list-style: none;  
+}
+
+.navBarContainer li{
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 5px;
+}
+
+::before{
+    color: var(--laranja);
+}
+
+.navBarContainer li::before{
+    content: "|";
+    position: absolute;
+    margin-left: -15px;
+}
+
+.navBarContainer nav a{
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--navbarCor);
+    text-decoration: none;
+}
+
+.navBarContainer nav a:hover{
+    text-decoration: underline;
+}
+
+.tituloContainer{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.tituloContainer h1{  
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 38px;
+    color: var(--colorTitutlo);
+    font-weight: bold;
+}
+
+.tituloContainer a{
+    font-family: 'Krona One', sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 22px;
+    color: var(--corSubTitulo);
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.tituloContainer a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* SECTION */
+
+/* DEFINIÇÃO DE TAMANHO DAS DIVS E PÁGS */
+
+.content{
+    background-image:url(../images/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.container .content_text{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4%;
+}
+
+/* Utilizado Css Grid para fazer a parte do titulo, subtititulo, e o icone de interrogação */
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Duas colunas, a primeira com tamanho automático e a segunda ocupando o restante do espaço */
+    grid-template-rows: repeat(2, 1fr); /* Duas linhas de tamanho igual na primeira coluna */
+}
+
+.grid-container .sub_text {
+    height: auto;
+    width:auto;
+    font-size: 2em;
+    color: #3E718C;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+
+.grid-container .explanation_text{
+    height: auto;
+    width:auto;
+    font-size: 2.8em;
+    color: #E46F44;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+
+.grid-container .icon_text img{
+    width: 90px;
+    position: absolute;
+    margin-left:-10px ;
+}
+
+.writing{
+    width: 34vw;
+    margin-left: 4%;
+    text-align: justify;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: medium ;
+    font-size: 1.2rem;
+    margin-top: 5%;
+    line-height: 1.5rem;
+}
+
+/* CSS utilizado na div e na imagem do Cerebro */
+
+.container .content_image{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_image h1{
+    width: 200px;
+    height: 150px;
+    font-size: 47px;  
+    font-family: 'Potta One', cursive;
+    color: #E46F44;
+}
+
+/* Inicialização Página 3*/
+
+/* CSS usado para definição de tamanho da pagina e divs */
+
+.container_dois{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: #F0F0F0;
+}
+
+
+.container_dois .title_dois{
+    color: #3E718C;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 2.3rem;
+}
+
+
+/* CSS utilizado na parte das imagens da página */
+
+
+.posters{
+    width: 100%;
+    height: auto;
+}
+
+.posters_images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.posters_images .item_um{
+    display: flex;
+    flex: 1; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.posters_images .item_dois{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.posters_images .item_tres{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.posters_images .select_image{
+    position: relative;
+    width: 550px;
+    height: 700px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0px 8px 5px #cacaca;
+    transition: .3s ease-in-out;
+}
+
+.posters_images .select_image:hover{
+    border: 5px solid #ffffff;
+    box-shadow: 0px 12px 5px #5f5f5f;
+}
+
+/* CSS para as caixas com texto qu ficaram dentro das imagens */
+.item_um, .item_dois, .item_tres {
+    position: relative;
+}
+
+.item_um .sobreposition{
+    position: absolute;
+    bottom: 20px;
+    left: 70px;
+    font-family: 'Krona One', sans-serif;
+    font-size: 1.3rem;
+    background-color: #000000;
+    padding: 10px;
+    color: #ffffff;
+    border: 2px solid #ffff;
+    border-radius: 10px;
+}
+
+.item_dois .sobreposition{
+    position: absolute;
+    bottom: 20px;
+    left: 70px;
+    font-family: 'Krona One', sans-serif;
+    font-size: 1.3rem;
+    background-color: #000000;
+    padding: 12px;
+    color: #ffffff;
+    border: 2px solid #ffff;
+    border-radius: 10px;
+}
+
+.item_tres .sobreposition{
+    position: absolute;
+    bottom: 20px;
+    left: 70px;
+    font-family: 'Krona One', sans-serif;
+    font-size: 1.3rem;
+    background-color: #000000;
+    padding: 12px;
+    color: #ffffff;
+    border: 2px solid #ffff;
+    border-radius: 10px;
+}
+
+/* SECTION PARTICIPANTES */
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+:root{
+    --marrom: #C55142;
+    --azul: #3E718C;
+    --azul2: #6A99B3;
+    --laranja: #E46F44;
+    --amarelo: #E6AD3C; 
+}
+
+.containerr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.containerr h2{
+    color: var(--laranja);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    font-size: 2rem;
+}
+.participantes{
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+    background-image: linear-gradient(to bottom,white , white 20%, #E6AD3C 20%);
+}
+.integrantes{
+    display: flex;
+    flex-direction: column;
+    width: 13%;;
+    margin-left: 1%;
+    margin-right: 1%;
+    background-image: linear-gradient(to bottom,white , white 20%, #E6AD3C 5%);
+    height: 81.5vh;
+}
+.integrantes img{
+    width: 95%;
+    border: 1px solid rgba(34, 34, 34, 0.1);
+    border-radius: 1.1rem;
+    box-shadow: .1rem .1rem .1rem .2rem rgba(34, 34, 34, 0.1);
+    margin-bottom: 3%;
+
+}
+.integrantes h3{
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    margin-bottom: 0%;
+}
+.integrantes h4{
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    margin-bottom: 5%;
+    
+}
+.integrantes p{
+    font-size: 75%;
+    font-weight: bold;
+    margin: 0;
+}
+.integrantes .barra{
+    background-color: white;
+    border-radius: 13px;
+    height: 4%;
+    margin-bottom: 5%;
+    display: flex;
+}
+.porc{
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 75%;
+    font-weight: bold;
+    margin-left: 4px;
+}
+.ferraz .prog1{
+    background-color: rgb(15, 133, 212);
+    height: 100%;
+    width: 50%;
+    border-radius: 13px;
+    margin-bottom: 5%; 
+}
+.ferraz .prog2{
+    background-color: rgb(15, 133, 212);
+    height: 100%;
+    width: 70%;
+    border-radius: 13px;
+    margin-bottom: 5%; 
+}
+.ferraz .prog3{
+    background-color: rgb(15, 133, 212);
+    height: 100%;
+    width: 93%;
+    border-radius: 13px;
+    margin-bottom: 5%; 
+}
+.kauan .prog1{
+    background-color: rgb(15, 133, 212);
+    height: 100%;
+    width: 85%;
+    border-radius: 13px;
+    margin-bottom: 5%; 
+}
+.kauan .prog2{
+    background-color: rgb(15, 133, 212);
+    height: 100%;
+    width: 75%;
+    border-radius: 13px;
+    margin-bottom: 5%; 
+}
+.kauan .prog3{
+    background-color: rgb(15, 133, 212);
+    height: 100%;
+    width: 75%;
+    border-radius: 13px;
+    margin-bottom: 5%; 
+}
+.sabrina .prog1{
+    background-color: rgb(15, 133, 212);
+    height: 100%;
+    width: 50%;
+    border-radius: 13px;
+    margin-bottom: 5%; 
+}
+.sabrina .prog2{
+    background-color: rgb(15, 133, 212);
+    height: 100%;
+    width: 75%;
+    border-radius: 13px;
+    margin-bottom: 5%; 
+}
+.sabrina .prog3{
+    background-color: rgb(15, 133, 212);
+    height: 100%;
+    width: 88%;
+    border-radius: 13px;
+    margin-bottom: 5%; 
+}
+.filipe .prog1{
+    background-color: rgb(15, 133, 212);
+    height: 100%;
+    width: 50%;
+    border-radius: 13px;
+    margin-bottom: 5%; 
+}
+.filipe .prog2{
+    background-color: rgb(15, 133, 212);
+    height: 100%;
+    width: 65%;
+    border-radius: 13px;
+    margin-bottom: 5%; 
+}
+.filipe .prog3{
+    background-color: rgb(15, 133, 212);
+    height: 100%;
+    width: 70%;
+    border-radius: 13px;
+    margin-bottom: 5%; 
+}
+.nathan .prog1{
+    background-color: rgb(15, 133, 212);
+    height: 100%;
+    width: 88%;
+    border-radius: 13px;
+    margin-bottom: 5%; 
+}
+.nathan .prog2{
+    background-color: rgb(15, 133, 212);
+    height: 100%;
+    width: 70%;
+    border-radius: 13px;
+    margin-bottom: 5%; 
+}
+.nathan .prog3{
+    background-color: rgb(15, 133, 212);
+    height: 100%;
+    width: 70%;
+    border-radius: 13px;
+    margin-bottom: 5%; 
+}
+.gustavo .prog1{
+    background-color: rgb(15, 133, 212);
+    height: 100%;
+    width: 70%;
+    border-radius: 13px;
+    margin-bottom: 5%; 
+}
+.gustavo .prog2{
+    background-color: rgb(15, 133, 212);
+    height: 100%;
+    width: 50%;
+    border-radius: 13px;
+    margin-bottom: 5%; 
+}
+.gustavo .prog3{
+    background-color: rgb(15, 133, 212);
+    height: 100%;
+    width: 88%;
+    border-radius: 13px;
+    margin-bottom: 5%; 
+}
