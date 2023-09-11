@@ -3,5 +3,5 @@
 
  Assim criamos um site para mostrar as 3 competências que acreditamos que sejam importantes ter.
 
- ##Site visto no Desktop
+ ## Site visto no Desktop
 ![site-competencias](https://github.com/FilipeGabrielRocha/projeto-site-competencias/assets/94459039/f68b8979-aee2-4b70-8af9-a43e7d98aee2)
